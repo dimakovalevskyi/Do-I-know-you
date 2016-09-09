@@ -1,11 +1,11 @@
 angular.module("dikyApp",[])
 .controller("mainCtrl",function ($scope, $http) {
-
+//---Users Initialization-------------------------------------------------------------
 	$scope.users=[
 		{id :"", valid : false, name : "", photoUrl : ""},
 		{id :"", valid : false, name : "", photoUrl : ""}
 	];
-
+//-----------------------------------------------------------------------------------
 	$scope.userUpdate = function (index) {
 		if($scope.users[index].id!=""){
 		$http.jsonp("https://api.vk.com/method/users.get?"+
@@ -27,11 +27,29 @@ angular.module("dikyApp",[])
 		})} 
 		else $scope.users[index].valid=false;
 	}
-	//$http.jsonp("https://api.vk.com/method/friends.get?"+
-	//			"user_id=999999"+
-	//			"&v=5.53&callback=JSON_CALLBACK").success(function(data){
-	//	console.log(data);
-	//}).error(function(){
+//------------------------------------------------------------------------------------
+	var queue = [];
+	var visited = [];
+	queue.push(1);
+	var current;
+	var finded=false;
+	var target="17";
 
-	//});
+	while((queue.length!=0)&&(!finded)){
+		current = queue.shift();
+		alert("New current is : "+current);
+		if(current == target) {
+			finded=true;
+			console.log("Finded! Current is " + current);
+		}else{
+			$http.jsonp("https://api.vk.com/method/friends.get?"+"user_id="+current+
+			"&v=5.53&callback=JSON_CALLBACK").success(function(data){
+				console.log("1");
+			});
+			console.log("2");
+		}
+		console.log("3");
+	};
+//------------------------------------------------------------------------------------
+
 });
