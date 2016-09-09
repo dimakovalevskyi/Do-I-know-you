@@ -38,20 +38,34 @@
 			<p>Введите ссылку на первого пользователя</p>
 				<div class="input-group">
   					<span class="input-group-addon">vk.com/</span>
-  					<input type="text" class="form-control" placeholder="username">
+  					<input type="text" class="form-control" 
+  					placeholder="username" ng-model="users[0].id" 
+  					ng-change="userUpdate(0)"
+  					ng-class="users[0].valid ? 'valid-input' : 'invalid-input'">
 				</div>
+				<img class="img-thumbnail user-photo" src="{{users[0].photoUrl}}" ng-if="users[0].valid">
+  				<p class="lead text-center" ng-if="users[0].valid">
+  					<a href="{{'http://vk.com/'+users[0].id}}" ng-bind="users[0].name"></a>
+  				</p>
 			</div>
 			<div class="col-sm-6">
 			<p>Введите ссылку на второго пользователя</p>
 				<div class="input-group">
   					<span class="input-group-addon">vk.com/</span>
-  					<input type="text" class="form-control" placeholder="username">
+  					<input type="text" class="form-control" 
+  					placeholder="username" ng-model="users[1].id"
+  					ng-change="userUpdate(1)" 
+  					ng-class="users[1].valid ? 'valid-input' : 'invalid-input'">
 				</div>	
+				<img class="img-thumbnail user-photo" src="{{users[1].photoUrl}}" ng-if="users[1].valid">
+  				<p class="lead text-center" ng-if="users[1].valid">
+  					<a href="{{'http://vk.com/'+users[1].id}}" ng-bind="users[1].name"></a>
+  				</p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-4 col-sm-offset-4">
-				<button class="btn btn-default btn-go">Поехали!</button>
+				<button class="btn btn-default btn-go" ng-disabled="!(users[1].valid&&users[0].valid)">Поехали!</button>
 			</div>
 		</div>
 	</div>

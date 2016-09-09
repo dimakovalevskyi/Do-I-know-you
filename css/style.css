@@ -16,4 +16,26 @@ body{
 
 .btn-go{
 	width: 100%;
+	margin:10px auto;
+}
+
+.valid-input{
+	background-color: #aaffaa;
+}
+
+.invalid-input{
+	background-color: #ffaaaa;
+}
+
+.user-photo{
+	margin:10px auto;
+	display: block;
+	width: 200px;
+	border-radius: 50%;
+}
+
+.link-center{
+	margin:10px auto;
+	display: block;
+	width: auto;
 }
