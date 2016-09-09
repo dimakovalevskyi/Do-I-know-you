@@ -34,7 +34,7 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-xs-6">
 			<p>Введите ссылку на первого пользователя</p>
 				<div class="input-group">
   					<span class="input-group-addon">vk.com/</span>
@@ -48,7 +48,7 @@
   					<a href="{{'http://vk.com/'+users[0].id}}" ng-bind="users[0].name"></a>
   				</p>
 			</div>
-			<div class="col-sm-6">
+			<div class="col-xs-6">
 			<p>Введите ссылку на второго пользователя</p>
 				<div class="input-group">
   					<span class="input-group-addon">vk.com/</span>
@@ -64,7 +64,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-4 col-sm-offset-4">
+			<div class="col-xs-4 col-xs-offset-4">
 				<button class="btn btn-default btn-go" ng-disabled="!(users[1].valid&&users[0].valid)">Поехали!</button>
 			</div>
 		</div>
