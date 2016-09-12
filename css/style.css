@@ -22,11 +22,24 @@ body{
 }
 
 .valid-input{
-	background-color: #aaffaa;
+	color:  #aaffaa;
+	border-color: #aaffaa;
 }
 
 .invalid-input{
-	background-color: #ffaaaa;
+	color:  #ffaaaa;
+	border-color: #ffaaaa;
+
+}
+.valid-input:focus{
+	border-color: #aaffaa;
+	-webkit-box-shadow: outset 0 10px 10px #aaffaa;
+            box-shadow: inset 0 1px 1px #aaffaa,0 0 8px #aaffaa;
+}
+.invalid-input:focus{
+	border-color: #ffaaaa;
+	-webkit-box-shadow: outset 0 10px 10px #ffaaaa;
+            box-shadow: inset 0 1px 1px #ffaaaa,0 0 8px #ffaaaa;
 }
 
 .user-photo{

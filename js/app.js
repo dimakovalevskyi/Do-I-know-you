@@ -47,9 +47,9 @@ angular.module("dikyApp",[])
 //---Behaviour for button-------------------------------------------------------------
 	$scope.letsFind=function (){
 		if($scope.users[0].id==$scope.users[1].id){
-			alert("Хорошая попытка, тестировщик!");
+			alert("Nice try, QA!");
 		}else{//if($scope.users[0].id==$scope.users[1].id)
-			alert("Во время выполнения алгоритма, возможно, все будет дико лагать. Все потому что код выполняется на стороне клиента, да, тебя. Я понимаю что такой подход не самый лучший, но мне нужно было что-то сварганить по быстрому. Так что, потерпи братан.");
+			alert("During the execution of the algorithm, there may be crazy lags in your browser because algorithm is executed on the client's side. It's bad idea, I understand it. Cheer up, dude!");
 			setIdsInsteadUserLinks();
 			}
 	}
@@ -90,7 +90,7 @@ angular.module("dikyApp",[])
 				countOfFriendsSecondUser=data.response.count;//be sure that id is entered
 
 				if(countOfFriendsFirstUser>countOfFriendsSecondUser){
-					alert("Для ускорения работы алгоритма пользователи будут поменяны местами");
+					alert("Users will be swapped for faster calculation");
 					var temp = $scope.users[0];//swapping two users
 					$scope.users[0]=$scope.users[1];//swapping two users
 					$scope.users[1]=temp;//swapping two users
