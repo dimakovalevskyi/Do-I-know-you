@@ -1,6 +1,32 @@
-angular.module("dikyApp",[])
-.controller("mainCtrl",function ($scope, $http) {
+var application = angular.module("dikyApp",['ngRoute']);
+
+application.config(function($routeProvider) {
+	$routeProvider
+	.when('/',{
+		templateUrl:'views/home.html',
+		controller:'homeCtrl'
+	})
+	.when('/about',{
+		templateUrl:'views/about.html',
+		controller:'aboutCtrl'
+	})
+	.otherwise('/',{
+		redirectTo:'/'
+	});
+}); 
+
+
+application.controller("aboutCtrl",function ($scope, $http, $location) {
+
+});
+application.controller("homeCtrl",function ($scope, $http, $location) {
 //---Primary Initialization-----------------------------------------------------------
+	
+	console.log($location.url());
+	console.log($location.path());
+	console.log($location.search());
+	console.log($location.hash());
+
 	$scope.users=[
 		{id :"", valid : false, name : "", photoUrl : ""},
 		{id :"", valid : false, name : "", photoUrl : ""}
