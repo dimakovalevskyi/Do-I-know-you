@@ -1,9 +1,7 @@
 <div class="container">
-		<div class="jumbotron">
-			<h1>Do I know you?</h1>
-			<p>
-				Dou you know what <a href="https://en.wikipedia.org/wiki/Six_degrees_of_separation">six degrees of separation</a> is? By means of my service you can test it on yourself, your friends, mates and famous people. The search is passed through users in <a href="https://vk.com/">vk.com</a>
-			</p>
-			<p><a class="btn btn-primary btn-lg" href="https://dimakovalevskyi.github.io/Do-I-know-you/">Try it now</a></p>
+		<div class="panel col-xs-offset-5 col-xs-7">
+			<h1 ng-bind="header" class="main-label"></h1>
+			<p ng-bind-html="text" class="lead"></p>
+			<p><a class="btn go" href="#/" ng-bind="buttonLabel"></a></p>
 		</div>
 	</div>
