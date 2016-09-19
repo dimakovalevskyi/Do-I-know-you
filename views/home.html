@@ -1,28 +1,31 @@
 <div ng-controller="homeCtrl">
 <h1 class="text-center main-label">Do I know you?</h1>
-	<div class="container light">
-		<div class="row">
-			<div class="col-xs-6">
-				<img class="img-thumbnail user-photo" src="{{users[0].photoUrl}}" 
-				ng-if="users[0].valid"/>
-  				<p class="lead text-center" ng-if="users[0].valid">
-  					<a class="user-link"  href="{{'http://vk.com/id'+users[0].id}}" 
-  					ng-bind="users[0].name"></a>
-  				</p>
-			</div>
-			<div class="col-xs-6">
-				<img class="img-thumbnail user-photo" src="{{users[1].photoUrl}}" 
-				ng-if="users[1].valid"/>
-  				<p class="lead text-center" ng-if="users[1].valid">
-  					<a class="user-link" href="{{'http://vk.com/id'+users[1].id}}" 
-  					ng-bind="users[1].name"></a>
-  				</p>
+	<div class="row">
+		<div class="container light">
+			<div class="row">
+				<div class="col-sm-6">
+					<img class="img-thumbnail user-photo" src="{{users[0].photoUrl}}" 
+					ng-show="users[0].valid"/>
+  					<p class="lead text-center" ng-show="users[0].valid">
+  						<a class="user-link"  href="{{'http://vk.com/id'+users[0].id}}" 
+  						ng-bind="users[0].name"></a>
+  					</p>
+				</div>
+				<div class="col-sm-6">
+					<img class="img-thumbnail user-photo" src="{{users[1].photoUrl}}" 
+					ng-show="users[1].valid"/>
+  					<p class="lead text-center" ng-show="users[1].valid">
+  						<a class="user-link" href="{{'http://vk.com/id'+users[1].id}}" 
+  						ng-bind="users[1].name"></a>
+  					</p>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container dark">
+	<div class="row">
+		<div class="container dark">
 		<div class="row">
-			<div class="col-xs-6">
+			<div class="col-sm-6">
 			<p ng-class="users[0].valid ? 'valid-input-label' : 'invalid-input-label'">
 				First user`s id:
 			</p>
@@ -37,7 +40,7 @@
   					ng-disabled="inProgress"/>
 				</div>
 			</div>
-			<div class="col-xs-6">
+			<div class="col-sm-6">
 			<p ng-class="users[1].valid ? 'valid-input-label' : 'invalid-input-label'">
 				Second user`s id:
 			</p>
@@ -57,7 +60,7 @@
 				<div class="progress" ng-show="inProgress" ng-cloak>
   					<div class="indeterminate"></div>
 				</div>
-			<div class="col-xs-2 col-xs-offset-5">
+			<div class="col-sm-2 col-sm-offset-5">
 				<button class="btn go" ng-disabled="!(users[1].valid&&users[0].valid)"  ng-click="letsFind()" ng-hide="inProgress">
 					<i class="fa fa-search" aria-hidden="true"></i>  Search
 				</button>
@@ -94,3 +97,4 @@
 		</div>
 	</div>
 </div>
+	</div>
