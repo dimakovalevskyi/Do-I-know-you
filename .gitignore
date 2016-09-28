@@ -1,0 +1,8 @@
+#ignore Modules for NodeJS
+/node_modules/*
+
+#ignore min.js in js folder
+/js/*.min.js
+
+#ignore style.css in build
+/build/style.css
