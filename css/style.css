@@ -23,7 +23,10 @@ body{
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 
-	}
+}
+.input-label{
+	margin: 15px 0 0 0;
+}
 .light{
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
@@ -105,6 +108,9 @@ body{
 	border-radius: 50%;
 	background-color: transparent;
 	border: 0;
+}
+.inline-block{
+	display: inline-block;
 }
 .chain-container{
 	table-layout: fixed;
