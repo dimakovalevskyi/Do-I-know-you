@@ -2,25 +2,27 @@
 <html ng-app="dikyApp">
 <head>
 	<meta charset="utf-8">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="build/script.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="build/style.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>	
+	<script src="build/script.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<title>Do I know you</title>
 </head>
 <body>
 	<nav class="navbar navbar-transparent navbar-static-top" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
-    			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            		<span class="sr-only">Toggle navigation</span>
-            		<span class="icon-bar"></span>
-            		<span class="icon-bar"></span>
-            		<span class="icon-bar"></span>
-          		</button>
+    			
+          		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      			</button>
       			<a class="navbar-brand" href="#/">Do I know you?</a>
     		</div>
-			<div class="collapse navbar-collapse">
+			<div id="navbar-collapse" class="collapse navbar-collapse">
       			<ul class="nav navbar-nav">
         			<li><a class="active" href="https://github.com/dimakovalevskyi">
         					My <i class="fa fa-github" aria-hidden="true"></i>
@@ -38,7 +40,5 @@
 	
 	<ng-view></ng-view>	
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>	
-	<script src="js/bootstrap.min.js"></script>
-</body>
+	</body>
 </html>
