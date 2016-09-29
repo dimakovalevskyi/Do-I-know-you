@@ -58,10 +58,19 @@ module.exports = function(grunt) {
           }
         },
         styles: {
-          files: ['css/*.css'],
-          tasks: ['concat', 'cssmin'],
+          files: ['css/*.scss'],
+          tasks: ['sass', 'concat', 'cssmin'],
           options: {
               spawn: false,
+          }
+        }
+      },
+      sass: {
+        dist: {
+          files: {
+            'css/style.css': 'css/style.scss',
+            'css/bootstrap.css': 'css/bootstrap.scss',
+            'css/font-awesome.css': 'css/font-awesome.scss'
           }
         }
       }
@@ -71,7 +80,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');//use uglify plugin
   grunt.loadNpmTasks('grunt-contrib-cssmin');//use uglify plugin
   grunt.loadNpmTasks('grunt-contrib-watch');//run watch
+  grunt.loadNpmTasks('grunt-contrib-sass');//use sass plugin
 
-  grunt.registerTask('default', ['uglify', 'concat', 'cssmin']);//what to do   
+  grunt.registerTask('default', ['sass', 'uglify', 'concat', 'cssmin']);//what to do   
 
 };

@@ -1,172 +1,167 @@
-html{
-	font-family: 'Roboto', sans-serif;
-}
+html {
+  font-family: 'Roboto', sans-serif; }
 
-body{
-	background-image: linear-gradient(145deg, #f4a35b, #f4655b 30%, #d16098 60%, #ca3469);
-	height: 100%;
-	font-family: 'Roboto', sans-serif;
-    background-attachment:fixed; 
-}
-.container{
-	color: white;
-	padding-top: 15px;
-}
-.main-label{
-	font-family: 'Lobster', sans-serif;
-	font-size:72px;
-	color: white;
-}
-.dark{
-	background: #273032;
-	border-radius: 3px;
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
+body {
+  background-image: linear-gradient(145deg, #f4a35b, #f4655b 30%, #d16098 60%, #ca3469);
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-attachment: fixed; }
 
-}
-.input-label{
-	margin: 15px 0 0 0;
-}
-.light{
-	border-top-left-radius: 3px;
-	border-top-right-radius: 3px;
-	background-color:rgba(0, 0, 0, .2);
-	height: 285px;
-}
-.go{
-	width: 100%;
-	height: 35px;
-	margin:10px auto;
-	text-transform: uppercase;
-	color: white;
-	background-color: #f4655b;
-	box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.4);
-}
+.container {
+  color: white;
+  padding-top: 15px; }
+
+.main-label {
+  font-family: 'Lobster', sans-serif;
+  font-size: 72px;
+  color: white; }
+
+.dark {
+  background: #273032;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.input-label {
+  margin: 15px 0 0 0; }
+
+.light {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 285px; }
+
+.go {
+  width: 100%;
+  height: 35px;
+  margin: 10px auto;
+  text-transform: uppercase;
+  color: white;
+  background-color: #f4655b;
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.4); }
+
 .go:hover,
-.go:focus{
-	box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.6);
-	color: white;
-	background-color: #d16098;
-}
-.navbar-toggle{
-	border: 1px solid rgba(0, 0, 0, .1);
-	box-shadow: 1px 1px 0 rgba(255, 255, 255, .1);
-	color: white;
-	background-color: rgba(0, 0, 0, .1);
-}
-.navbar-toggle .icon-bar{
-	background-color: white;
-}
-.user-input{
-	width: 100%;
-	height: 34px;
-	padding: 6px 12px;
-	font-size: 14px;
-	color: white;
-	background-color: transparent;
-	border:0;
-	border-radius: 0;
-	border-bottom: 3px solid white;
-}
-.input-group-addon{
-	padding: 6px 12px;
-	font-size: 14px;
-	font-weight: normal;
-	color: white;
-	text-align: center;
-	background-color: transparent;
-	border:0;
-	border-radius: 0;
-	border-bottom: 3px solid white;
-}
-.valid-input-label{
-	color: #aaffaa;
-}
-.invalid-input-label{
-	color: #ffaaaa;
-}
+.go:focus {
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.6);
+  color: white;
+  background-color: #d16098; }
 
-.valid-input{
-	border-color: #aaffaa;
-}
+.navbar-toggle {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.1);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1); }
 
-.invalid-input{
-	border-color: #ffaaaa;
-}
-.user-photo{
-	margin:10px auto;
-	display: block;
-	width: 200px;
-	border-radius: 50%;
-	background-color: transparent;
-	border: 0;
-}
-.user-photo-small{
-	margin:5px auto;
-	display: block;
-	width: 100px;
-	border-radius: 50%;
-	background-color: transparent;
-	border: 0;
-}
-.inline-block{
-	display: inline-block;
-}
-.chain-container{
-	table-layout: fixed;
-}
-.user-link{
-	color: rgba(255, 255, 255, .7);
-}
+.navbar-toggle .icon-bar {
+  background-color: white; }
+
+.user-input {
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: white;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 3px solid white; }
+
+.input-group-addon {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 3px solid white; }
+
+.valid-input-label {
+  color: #aaffaa; }
+
+.invalid-input-label {
+  color: #ffaaaa; }
+
+.valid-input {
+  border-color: #aaffaa; }
+
+.invalid-input {
+  border-color: #ffaaaa; }
+
+.user-photo {
+  margin: 10px auto;
+  display: block;
+  width: 200px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 0; }
+
+.user-photo-small {
+  margin: 5px auto;
+  display: block;
+  width: 100px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 0; }
+
+.inline-block {
+  display: inline-block; }
+
+.chain-container {
+  table-layout: fixed; }
+
+.user-link {
+  color: rgba(255, 255, 255, 0.7); }
+
 .user-link:hover,
-.user-link:focus{
-	color: rgba(255, 255, 255, 1);
-	text-decoration: none;
-}
+.user-link:focus {
+  color: white;
+  text-decoration: none; }
+
 .white-link,
 .white-link:hover,
-.white-link:focus{
-	color: white;
-	text-decoration: underline;
-}
-.panel{
-	padding: 30px 20px;
-	margin-bottom: 30px;
-	color: white;
-	background-color:rgba(0, 0, 0, .2);
-	border-radius: 10px;
-}
-.navbar{
-	height: auto;
-}
-.navbar-transparent{
-	background: transparent;
-	color: white;
-	border-bottom: 1px solid rgba(0, 0, 0, .1);
-	box-shadow: 0 1px 0 rgba(255, 255, 255, .1);
-}
-.navbar-brand{
-	color: rgba(255, 255, 255, 0.8);
-	font-family: 'Lobster', cursive;
-	font-size:25px;
-	background: inherit;
-}
+.white-link:focus {
+  color: white;
+  text-decoration: underline; }
+
+.panel {
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px; }
+
+.navbar {
+  height: auto; }
+
+.navbar-transparent {
+  background: transparent;
+  color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1); }
+
+.navbar-brand {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+  background: inherit; }
+
 .navbar-brand:hover,
-.navbar-brand:focus{
-	color: rgba(255, 255, 255, 1);
-	border-bottom: 2px solid rgba(255, 255, 255, .5);
-}
-.nav > li > a{
-	color: rgba(255, 255, 255, .8);
-	background: inherit;
-}
+.navbar-brand:focus {
+  color: white;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5); }
+
+.nav > li > a {
+  color: rgba(255, 255, 255, 0.8);
+  background: inherit; }
+
 .nav > li > a:hover,
-.nav > li > a:focus{
-	color: rgba(255, 255, 255, 1);
-	border-bottom: 2px solid rgba(255, 255, 255, .5);
-	background: inherit;
-	height: 50px;
-}
+.nav > li > a:focus {
+  color: white;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  background: inherit;
+  height: 50px; }
 
 /* Progress Bar copied from internet with some fixes*/
 .progress {
@@ -177,39 +172,44 @@ body{
   background-color: #f4a35b;
   border-radius: 0px;
   background-clip: padding-box;
-  margin:10px 15px 0 15px;
+  margin: 10px 15px 0 15px;
   overflow: hidden; }
-  .progress .determinate {
-    position: absolute;
-    background-color: inherit;
-    top: 0;
-    bottom: 0;
-    background-color: #ca3469;
-    transition: width .3s linear; }
-  .progress .indeterminate {
-    background-color: #ca3469; }
-    .progress .indeterminate:before {
-      content: '';
-      position: absolute;
-      background-color: inherit;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      will-change: left, right;
-      -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
-              animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite; }
-    .progress .indeterminate:after {
-      content: '';
-      position: absolute;
-      background-color: inherit;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      will-change: left, right;
-      -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
-              animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
-      -webkit-animation-delay: 1.15s;
-              animation-delay: 1.15s; }
+
+.progress .determinate {
+  position: absolute;
+  background-color: inherit;
+  top: 0;
+  bottom: 0;
+  background-color: #ca3469;
+  transition: width .3s linear; }
+
+.progress .indeterminate {
+  background-color: #ca3469; }
+
+.progress .indeterminate:before {
+  content: '';
+  position: absolute;
+  background-color: inherit;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  will-change: left, right;
+  -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+  animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite; }
+
+.progress .indeterminate:after {
+  content: '';
+  position: absolute;
+  background-color: inherit;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  will-change: left, right;
+  -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+  animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+  -webkit-animation-delay: 1.15s;
+  animation-delay: 1.15s; }
+
 @-webkit-keyframes indeterminate {
   0% {
     left: -35%;
@@ -250,3 +250,5 @@ body{
   100% {
     left: 107%;
     right: -8%; } }
+
+/*# sourceMappingURL=style.css.map */
