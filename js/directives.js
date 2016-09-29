@@ -3,7 +3,7 @@ application.directive("bigProfiles",function () {
 		link: function(scope, element, attributes){
 			scope.usersData = scope[attributes["dataSource"]];
 		},
-		restrict: "AE",
+		restrict: "A",
 		templateUrl: 'views/bigProfiles.html'
 	}//return
 });//application.directive("bigProfiles",function () {
