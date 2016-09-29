@@ -11,7 +11,8 @@ module.exports = function(grunt) {
               'js/angular-sanitize.min.js',
               'js/bootstrap.min.js',
               'js/app.js',
-              'js/controllers.js'
+              'js/controllers.js',
+              'js/directives.js'
             ],
             dest: 'build/script.min.js',
           },
@@ -51,16 +52,25 @@ module.exports = function(grunt) {
       watch: {
         scripts: {
           files: ['js/*.js'],
-          tasks: ['concat', 'uglify'],
+          tasks: ['uglify' , 'concat'],
           options: {
               spawn: false,
           }
         },
         styles: {
-          files: ['css/*.css'],
-          tasks: ['concat', 'cssmin'],
+          files: ['css/*.scss'],
+          tasks: ['sass', 'concat', 'cssmin'],
           options: {
               spawn: false,
+          }
+        }
+      },
+      sass: {
+        dist: {
+          files: {
+            'css/style.css': 'css/style.scss',
+            'css/bootstrap.css': 'css/bootstrap.scss',
+            'css/font-awesome.css': 'css/font-awesome.scss'
           }
         }
       }
@@ -69,8 +79,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');//use concat plugin
   grunt.loadNpmTasks('grunt-contrib-uglify');//use uglify plugin
   grunt.loadNpmTasks('grunt-contrib-cssmin');//use uglify plugin
-  grunt.loadNpmTasks('grunt-contrib-watch');//use uglify watch
+  grunt.loadNpmTasks('grunt-contrib-watch');//run watch
+  grunt.loadNpmTasks('grunt-contrib-sass');//use sass plugin
 
-  grunt.registerTask('default', ['uglify', 'concat', 'cssmin']);//what to do   
+  grunt.registerTask('default', ['sass', 'uglify', 'concat', 'cssmin']);//what to do   
 
 };
