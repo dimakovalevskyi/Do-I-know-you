@@ -3,23 +3,7 @@
 <h1 class="text-center main-label">Do I know you?</h1>
 	<div class="row">
 		<div class="container light">
-			<div class="row">
-				<div class="col-xs-6">
-					<img class="img-thumbnail user-photo" src="{{users[0].photoUrl}}" 
-					ng-show="users[0].valid"/>
-  					<p class="lead text-center" ng-show="users[0].valid">
-  						<a class="user-link"  href="{{'http://vk.com/id'+users[0].id}}" 
-  						ng-bind="users[0].name"></a>
-  					</p>
-				</div>
-				<div class="col-xs-6">
-					<img class="img-thumbnail user-photo" src="{{users[1].photoUrl}}" 
-					ng-show="users[1].valid"/>
-  					<p class="lead text-center" ng-show="users[1].valid">
-  						<a class="user-link" href="{{'http://vk.com/id'+users[1].id}}" 
-  						ng-bind="users[1].name"></a>
-  					</p>
-				</div>
+			<div class="row" big-profiles="users">
 			</div>
 		</div>
 	</div>
