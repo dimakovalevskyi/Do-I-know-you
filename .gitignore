@@ -1,0 +1,17 @@
+#ignore Modules for NodeJS
+/node_modules/*
+
+#ignore min.js in js folder
+/js/*.min.js
+
+#ignore style.css in build
+/build/style.css
+
+#ignore all css files in css folder
+/css/*.css
+
+#ignore all css.map files in css folder
+/css/*.css.map
+
+#ignore all css.map files in css folder
+/.sass-cache/
