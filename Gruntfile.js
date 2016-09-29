@@ -11,7 +11,8 @@ module.exports = function(grunt) {
               'js/angular-sanitize.min.js',
               'js/bootstrap.min.js',
               'js/app.js',
-              'js/controllers.js'
+              'js/controllers.js',
+              'js/directives.js'
             ],
             dest: 'build/script.min.js',
           },
@@ -69,7 +70,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');//use concat plugin
   grunt.loadNpmTasks('grunt-contrib-uglify');//use uglify plugin
   grunt.loadNpmTasks('grunt-contrib-cssmin');//use uglify plugin
-  grunt.loadNpmTasks('grunt-contrib-watch');//use uglify watch
+  grunt.loadNpmTasks('grunt-contrib-watch');//run watch
 
   grunt.registerTask('default', ['uglify', 'concat', 'cssmin']);//what to do   
 
